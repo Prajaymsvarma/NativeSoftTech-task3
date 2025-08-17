@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>Update Task</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Update Task</h1>
+
+    <form method="post">
+        <input type="text" name="description" value="{{ task.description }}">
+        <button type="submit">Update</button>
+    </form>
+
+    <a href="{{ url_for('index') }}">Back</a>
+</body>
+</html>
